@@ -16,7 +16,7 @@ export default function About() {
             objectFit="cover"
           />
         </div>
-        <div className="flex-1 bg-white p-6 rounded-lg shadow-md">
+        <div className="flex-1 bg-white p-6 rounded-lg shadow-md bg-opacity-25">
           <p className="text-gray-700 mb-4">
             I&apos;m an individual living in London, UK. I grew up in Cornwall,
             UK, and have spent some time living in Bristol, UK.

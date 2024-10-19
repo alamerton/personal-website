@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="bg-gradient-to-r from-indigo-600 to-green-600 text-white shadow-lg">
+    <header className="bg-gradient-to-r from-indigo-600 to-green-600 text-white shadow-lg bg-opacity-1">
       <div className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
           <Link
@@ -15,7 +15,7 @@ const Header = () => {
             <li>
               <Link
                 href="/"
-                className="hover:text-purple-200 transition duration-300"
+                className="hover:text-indigo-600 transition duration-300"
               >
                 Home
               </Link>
@@ -23,7 +23,7 @@ const Header = () => {
             <li>
               <Link
                 href="/about"
-                className="hover:text-purple-200 transition duration-300"
+                className="hover:text-indigo-600 transition duration-300"
               >
                 About
               </Link>
