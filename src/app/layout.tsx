@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import Header from "./components/header";
 
 export const metadata: Metadata = {
-  title: "Your Portfolio",
-  description: "Welcome to my portfolio",
+  title: "Alfie Lamerton",
+  description: "Welcome to me!",
 };
 
 export default function RootLayout({
