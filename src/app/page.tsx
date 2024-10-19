@@ -6,9 +6,9 @@ export default function Home() {
           Hi! I&apos;m Alfie
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          I am an individual living in London, UK, working on building career
-          capital in technical AI safety and entrepreneurship. I plan to be a
-          computer scientist in the future.
+          I&apos;m an individual living in London, UK, working on building
+          career capital in technical AI safety and entrepreneurship. I plan to
+          be a computer scientist in the future.
         </p>
       </section>
       {/* <section className="grid md:grid-cols-2 gap-8">
