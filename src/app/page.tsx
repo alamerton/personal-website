@@ -1,11 +1,12 @@
 import alfie from "@/images/alfie.jpeg";
 import Image from "next/image";
+import { FaLinkedin, FaEnvelope, FaFileAlt, FaComments } from "react-icons/fa";
 
 export default function Home() {
   return (
     <main className="container mx-auto px-4 py-12">
       <section className="flex justify-center mb-8">
-        <div className="w-64 h-64 relative rounded-full overflow-hidden shadow-lg">
+        <div className="w-40 h-40 relative rounded-full overflow-hidden shadow-lg">
           <Image
             src={alfie}
             alt="Alfie Lamerton"
@@ -16,14 +17,55 @@ export default function Home() {
         </div>
       </section>
       <section className="text-center mb-16">
-        <h1 className="text-5xl font-bold mb-4 text-indigo-600">
+        <h1 className="text-5xl font-bold mb-4 text-indigo-600 font-merriweather">
           Hi! I'm Alfie
         </h1>
-        <p className="text-xl text-gray-600 max-width-2xl mx-auto">
+        <p className="text-xl text-gray-700 max-w-2xl mx-auto">
           I'm an individual living in London, UK, working on building career
           capital in technical AI safety and entrepreneurship. I plan to be a
           computer scientist in the future.
         </p>
+      </section>
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-center text-indigo-600">
+          Connect with Me
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+          <a
+            href="https://www.linkedin.com/in/your-linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center bg-white text-blue-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+          >
+            <FaLinkedin className="text-2xl mr-3" />
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://www.lesswrong.com/user/your-lesswrong"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center bg-white text-gray-800 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+          >
+            <FaComments className="text-2xl mr-3" />
+            <span>LessWrong</span>
+          </a>
+          <a
+            href="mailto:your-email@example.com"
+            className="flex items-center justify-center bg-white text-green-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+          >
+            <FaEnvelope className="text-2xl mr-3" />
+            <span>Email Me</span>
+          </a>
+          <a
+            href="/path/to/your/cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center bg-white text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+          >
+            <FaFileAlt className="text-2xl mr-3" />
+            <span>My CV</span>
+          </a>
+        </div>
       </section>
     </main>
   );
