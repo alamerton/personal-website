@@ -32,7 +32,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
           <a
-            href="https://www.linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/alfie-lamerton/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center bg-white text-blue-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
@@ -41,23 +41,23 @@ export default function Home() {
             <span>LinkedIn</span>
           </a>
           <a
-            href="https://www.lesswrong.com/user/your-lesswrong"
+            href="https://www.lesswrong.com/users/alamerton"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center bg-white text-gray-800 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center bg-white text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
           >
             <FaComments className="text-2xl mr-3" />
             <span>LessWrong</span>
           </a>
           <a
-            href="mailto:your-email@example.com"
-            className="flex items-center justify-center bg-white text-green-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            href="mailto:alfie.david.lamerton@gmail.com"
+            className="flex items-center justify-center bg-white text-gray-800 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
           >
             <FaEnvelope className="text-2xl mr-3" />
             <span>Email Me</span>
           </a>
           <a
-            href="/path/to/your/cv.pdf"
+            href="https://docs.google.com/document/d/1Eezn5Onh6oLiNWA-MWcm0h3VqKjDSgwmUch--iXZssA/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center bg-white text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
