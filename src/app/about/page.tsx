@@ -25,10 +25,10 @@ export default function About() {
           </h2>
           <p className="text-gray-700 mb-4">
             I&apos;m generally excited about the future of technology and
-            innovation and how it can transform the world. Specifically, I'm
-            enthusiastic about computer science and entrepreneurship. To that
-            end, I am currently focusing my energy on building skills in
-            organisation building and technical AI safety research.
+            innovation and how it can transform the world. Specifically,
+            I&apos;m enthusiastic about computer science and entrepreneurship.
+            To that end, I&apos; currently focusing my energy on building skills
+            in organisation building and technical AI safety research.
           </p>
           <p className="text-gray-700 mb-4">
             Generally, I&apos;m on a mission to serve humanity by creating
