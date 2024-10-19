@@ -1,6 +1,5 @@
-// src/app/about/page.tsx
 import Image from "next/image";
-
+import alfie from "@/images/alfie.jpeg";
 export default function About() {
   return (
     <main className="container mx-auto px-4 py-12">
@@ -10,28 +9,40 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
         <div className="w-64 h-64 relative rounded-full overflow-hidden shadow-lg">
           <Image
-            src="/your-photo.jpg"
-            alt="Your Name"
+            src={alfie}
+            alt="Alfie Lamerton"
             layout="fill"
             objectFit="cover"
           />
         </div>
         <div className="flex-1 bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
-            My Journey
-          </h2>
           <p className="text-gray-700 mb-4">
-            Here you can write about your background, experience, and what
-            drives you as a developer. Share your passion for coding and any
-            significant milestones in your career.
+            I&apos;m an individual living in London, UK. I grew up in Cornwall,
+            UK, and have spent some time living in Bristol, UK.
           </p>
           <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
-            My Approach
+            Professionally
+          </h2>
+          <p className="text-gray-700 mb-4">
+            I&apos;m generally excited about the future of technology and
+            innovation and how it can transform the world. Specifically, I'm
+            enthusiastic about computer science and entrepreneurship. To that
+            end, I am currently focusing my energy on building skills in
+            organisation building and technical AI safety research.
+          </p>
+          <p className="text-gray-700 mb-4">
+            Generally, I&apos;m on a mission to serve humanity by creating
+            beautiful and useful things. Specifically, I plan to be a computer
+            scientist working on impactful problems, starting with global
+            catastrophic risks such AI alignment.
+          </p>
+          <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
+            Not Professionally
           </h2>
           <p className="text-gray-700">
-            Describe your development philosophy, work ethic, or any unique
-            perspectives you bring to your projects. This is a great place to
-            let your personality shine through.
+            In the past I have been an avid fly fisherman, downhill
+            skateboarder, and surfer. I&apos;m currently enthusiastic about
+            ultra-distance running, rationality, and statistics.
           </p>
         </div>
       </div>

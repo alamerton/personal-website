@@ -1,4 +1,3 @@
-// src/app/components/header.tsx
 import Link from "next/link";
 
 const Header = () => {
@@ -10,7 +9,7 @@ const Header = () => {
             href="/"
             className="text-2xl font-bold tracking-tight hover:text-purple-200 transition duration-300"
           >
-            Your Name
+            Alfie Lamerton
           </Link>
           <ul className="flex space-x-6">
             <li>
