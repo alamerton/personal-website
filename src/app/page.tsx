@@ -18,12 +18,14 @@ export default function Home() {
       </section>
       <section className="text-center mb-16">
         <h1 className="text-5xl font-bold mb-4 text-indigo-600 font-merriweather">
-          Hi! I'm Alfie
+          Hi! I&apos;m Alfie
         </h1>
         <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-          I'm an individual living in London, UK, working on building career
-          capital in technical AI safety and entrepreneurship. I plan to be a
-          computer scientist in the future.
+          I&apos;m an individual living in London, UK, currently building{" "}
+          <a className="text-indigo-600" href="http://formationresearch.com/">
+            Formation Research
+          </a>
+          . I plan to be a computer scientist in the future.
         </p>
       </section>
       <section className="mb-16">

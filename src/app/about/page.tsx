@@ -1,13 +1,14 @@
 import Image from "next/image";
 import alfie from "@/images/alfie.jpeg";
+
 export default function About() {
   return (
-    <main className="container mx-auto px-4 py-12">
+    <main className="container mx-auto px-4 py-12 max-w-4xl">
       <h1 className="text-4xl font-bold mb-8 text-center text-indigo-600">
         About Me
       </h1>
       <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-        <div className="w-64 h-64 relative rounded-full overflow-hidden shadow-lg">
+        <div className="w-64 h-64 relative rounded-full overflow-hidden shadow-lg flex-shrink-0">
           <Image
             src={alfie}
             alt="Alfie Lamerton"
@@ -27,8 +28,8 @@ export default function About() {
             I&apos;m generally excited about the future of technology and
             innovation and how it can transform the world. Specifically,
             I&apos;m enthusiastic about computer science and entrepreneurship.
-            To that end, I&apos; currently focusing my energy on building skills
-            in organisation building and technical AI safety research.
+            To that end, I&apos;m currently focusing my energy on building
+            skills in organisation building and technical AI safety research.
           </p>
           <p className="text-gray-700 mb-4">
             Generally, I&apos;m on a mission to serve humanity by creating

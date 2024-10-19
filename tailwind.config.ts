@@ -11,6 +11,9 @@ const config: Config = {
       fontFamily: {
         merriweather: ["var(--font-merriweather)"],
       },
+      colors: {
+        "formation-purple": "#33005D",
+      },
     },
   },
   plugins: [],
