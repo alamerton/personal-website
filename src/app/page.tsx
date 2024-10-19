@@ -17,7 +17,7 @@ export default function Home() {
         </div>
       </section>
       <section className="text-center mb-16">
-        <h1 className="text-5xl font-bold mb-4 text-indigo-600 font-merriweather">
+        <h1 className="text-5xl font-bold mb-4 text-indigo-700 font-merriweather">
           Hi! I&apos;m Alfie
         </h1>
         <p className="text-xl text-gray-700 max-w-2xl mx-auto">

@@ -28,6 +28,14 @@ const Header = () => {
                 About
               </Link>
             </li>
+            <li>
+              <Link
+                href="/blog"
+                className="hover:text-indigo-600 transition duration-300"
+              >
+                Blog
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

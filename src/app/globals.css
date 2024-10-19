@@ -25,3 +25,33 @@ body {
     text-wrap: balance;
   }
 }
+
+body {
+  background-color: #f9fafb; /* Light gray background */
+  color: #374151; /* Dark gray text */
+}
+
+.prose {
+  max-width: 65ch; /* Limit width for better readability */
+}
+
+.prose img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.prose a {
+  text-decoration: none;
+  color: #3b82f6; /* Tailwind blue */
+}
+
+.prose a:hover {
+  text-decoration: underline;
+}
+
+.prose blockquote {
+  border-left: 4px solid #3b82f6; /* Blue left border */
+  background-color: #eff6ff; /* Light blue background */
+  padding: 1rem;
+  border-radius: 0.5rem;
+}

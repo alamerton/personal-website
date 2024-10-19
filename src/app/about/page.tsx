@@ -4,7 +4,7 @@ import alfie from "@/images/alfie.jpeg";
 export default function About() {
   return (
     <main className="container mx-auto px-4 py-12 max-w-4xl">
-      <h1 className="text-4xl font-bold mb-8 text-center text-indigo-600">
+      <h1 className="text-4xl font-bold mb-8 text-center text-indigo-700">
         About Me
       </h1>
       <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
