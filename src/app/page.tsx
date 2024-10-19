@@ -37,7 +37,8 @@ export default function Home() {
             href="https://www.linkedin.com/in/alfie-lamerton/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center bg-white text-blue-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-blue-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaLinkedin className="text-2xl mr-3" />
             <span>LinkedIn</span>
@@ -46,14 +47,16 @@ export default function Home() {
             href="https://www.lesswrong.com/users/alamerton"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center bg-white text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaComments className="text-2xl mr-3" />
             <span>LessWrong</span>
           </a>
           <a
             href="mailto:alfie.david.lamerton@gmail.com"
-            className="flex items-center justify-center bg-white text-gray-800 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-gray-800 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaEnvelope className="text-2xl mr-3" />
             <span>Email Me</span>
@@ -62,7 +65,8 @@ export default function Home() {
             href="https://docs.google.com/document/d/1Eezn5Onh6oLiNWA-MWcm0h3VqKjDSgwmUch--iXZssA/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center bg-white text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaFileAlt className="text-2xl mr-3" />
             <span>My CV</span>
