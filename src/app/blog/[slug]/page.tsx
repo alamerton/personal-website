@@ -50,7 +50,7 @@ export default async function BlogPost({
           )}
         </header>
         <div
-          className="prose prose-lg prose-blue max-w-none"
+          className="prose prose-lg prose-blue max-w-none text-gray-800 leading-relaxed"
           dangerouslySetInnerHTML={{ __html: contentHtml }}
         />
       </article>

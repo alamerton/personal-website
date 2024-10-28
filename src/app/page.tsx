@@ -1,6 +1,12 @@
 import alfie from "@/images/alfie.jpeg";
 import Image from "next/image";
-import { FaLinkedin, FaEnvelope, FaFileAlt, FaComments } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaEnvelope,
+  FaFileAlt,
+  FaComments,
+  FaGithub,
+} from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -69,7 +75,17 @@ export default function Home() {
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaFileAlt className="text-2xl mr-3" />
-            <span>My CV</span>
+            <span>CV</span>
+          </a>
+          <a
+            href="https://github.com/alamerton"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center text-gray-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
+          >
+            <FaGithub className="text-2xl mr-3" />
+            <span>GitHub</span>
           </a>
         </div>
       </section>
