@@ -68,7 +68,7 @@ export default function Home() {
             <span>Email Me</span>
           </a>
           <a
-            href="https://docs.google.com/document/d/1Eezn5Onh6oLiNWA-MWcm0h3VqKjDSgwmUch--iXZssA/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1ar6ch58wVePjJGqZjwt3Wvnx3D7I9hRXn_wBND2bHdU/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
