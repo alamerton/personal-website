@@ -6,6 +6,7 @@ import {
   FaFileAlt,
   FaComments,
   FaGithub,
+  FaStrava,
 } from "react-icons/fa";
 
 export default function Home() {
@@ -86,6 +87,16 @@ export default function Home() {
           >
             <FaGithub className="text-2xl mr-3" />
             <span>GitHub</span>
+          </a>
+          <a
+            href="https://www.strava.com/athletes/43741695"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center text-orange-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
+          >
+            <FaStrava className="text-2xl mr-3" />
+            <span>Strava</span>
           </a>
         </div>
       </section>
