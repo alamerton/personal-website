@@ -42,9 +42,9 @@ export default function About() {
           </h2>
           <p className="text-gray-700">
             In the past I have been an avid fly fisherman, downhill
-            skateboarder, and surfer. My interests include long distance
-            running, psychology, philosophy, and mathematics. I also follow a
-            plant-based diet and am attempting the{" "}
+            skateboarder, and surfer. Beyond computer science, my interests
+            include long distance running, psychology, philosophy, and
+            mathematics. I also follow a plant-based diet and am attempting the{" "}
             <a
               className="text-indigo-600"
               href="https://andyfrisella.com/pages/75hard-info?srsltid=AfmBOoqXeo1ZM2AUwYF_M7WEdnfdyox6K85kC97lb0zAz9AGFyGxQNRD"
