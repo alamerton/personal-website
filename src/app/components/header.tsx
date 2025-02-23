@@ -30,7 +30,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href="/blog"
+                href="https://substack.com/@alfielamerton"
                 className="hover:text-indigo-600 transition duration-300"
               >
                 Blog
