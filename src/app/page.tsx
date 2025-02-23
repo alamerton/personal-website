@@ -37,7 +37,7 @@ export default function Home() {
       </section>
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-6 text-center text-indigo-600">
-          Hyperlinks
+          Links
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
           <a
