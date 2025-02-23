@@ -40,10 +40,44 @@ export default function About() {
           <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
             Not Professionally
           </h2>
-          <p className="text-gray-700">
+          <p className="text-gray-700 mb-8">
             In the past I have been an avid fly fisherman, downhill
             skateboarder, and surfer. Beyond computer science, my interests
             include running, psychology, philosophy, and mathematics.
+          </p>
+          <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
+            My Personality
+          </h2>
+          <p className="text-gray-700 mb-4">
+            Here are my scores on the Big Five personality traits, where each
+            number represents my percentile ranking compared to the general
+            population according to the Big Five Aspects Scale.
+          </p>
+          <ul className="list-disc pl-5 text-gray-700 space-y-1">
+            <li>
+              <strong>Agreeableness:</strong> 32
+            </li>
+            <li>
+              <strong>Extraversion:</strong> 57
+            </li>
+            <li>
+              <strong>Conscientiousness:</strong> 93
+            </li>
+            <li>
+              <strong>Openness to experience:</strong> 96
+            </li>
+            <li>
+              <strong>Neuroticism:</strong> 3
+            </li>
+          </ul>
+          <p className="text-gray-700 mb-8 mt-4">
+            Generated using{" "}
+            <a
+              className="text-indigo-600"
+              href="https://www.understandmyself.com/"
+            >
+              understandmyself.com
+            </a>
           </p>
         </div>
       </div>
