@@ -7,6 +7,8 @@ import {
   FaComments,
   FaGithub,
   FaStrava,
+  FaBook,
+  FaMusic,
 } from "react-icons/fa";
 
 export default function Home() {
@@ -28,7 +30,7 @@ export default function Home() {
           Hi! I&apos;m Alfie
         </h1>
         <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-          I&apos;m an individual living in London, UK, currently building{" "}
+          I&apos;m an individual living in Falmouth, UK, currently building{" "}
           <a className="text-indigo-600" href="http://formationresearch.com/">
             Formation Research
           </a>
@@ -97,6 +99,26 @@ export default function Home() {
           >
             <FaStrava className="text-2xl mr-3" />
             <span>Strava</span>
+          </a>
+          <a
+            href="https://www.goodreads.com/user/show/180101310-alfie-lamerton"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center text-brown-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
+          >
+            <FaBook className="text-2xl mr-3" />
+            <span>Goodreads</span>
+          </a>
+          <a
+            href="https://rateyourmusic.com/~alamerton"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center text-blue-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
+          >
+            <FaMusic className="text-2xl mr-3" />
+            <span>Rate Your Music</span>
           </a>
         </div>
       </section>

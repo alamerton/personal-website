@@ -18,8 +18,8 @@ export default function About() {
         </div>
         <div className="flex-1 bg-white p-6 rounded-lg shadow-md bg-opacity-25">
           <p className="text-gray-700 mb-4">
-            I&apos;m an individual living in London, UK. I grew up in Cornwall,
-            UK, and have spent some time living in Bristol, UK.
+            I&apos;m an individual living in Falmouth, UK. I grew up here, and
+            have spent some time living in Bristol and London.
           </p>
           <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
             Professionally
