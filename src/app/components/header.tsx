@@ -33,7 +33,7 @@ const Header = () => {
                 href="https://substack.com/@alfielamerton"
                 className="hover:text-indigo-600 transition duration-300"
               >
-                Blog
+                Substack
               </Link>
             </li>
           </ul>
