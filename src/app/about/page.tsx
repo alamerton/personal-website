@@ -32,10 +32,10 @@ export default function About() {
             skills in organisation building and technical AI safety research.
           </p>
           <p className="text-gray-700 mb-4">
-            Generally, I&apos;m on a mission to serve humanity by creating
-            beautiful and useful things. Specifically, I plan to be a computer
-            scientist working on impactful problems, starting with global
-            catastrophic risks such AI alignment.
+            I aim to serve humanity by creating beautiful and useful things.
+            Specifically, I plan to be a computer scientist working on impactful
+            problems, starting with global catastrophic risks such AI alignment,
+            and an entrepreneur who makes impactful things based on my research.
           </p>
           <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
             Not Professionally
