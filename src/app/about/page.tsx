@@ -29,7 +29,9 @@ export default function About() {
             innovation and how it can transform the world. Specifically,
             I&apos;m enthusiastic about computer science and entrepreneurship.
             To that end, I&apos;m currently focusing my energy on building
-            skills in organisation building and technical AI safety research.
+            skills in entrepreneurship and technical AI safety research.
+            I&apos;m also working part-time as a research assistant at
+            King&apos;s College London to further build my research skills.
           </p>
           <p className="text-gray-700 mb-4">
             I aim to serve humanity by creating beautiful and useful things.
@@ -43,7 +45,7 @@ export default function About() {
           <p className="text-gray-700 mb-8">
             In the past I have been an avid fly fisherman, downhill
             skateboarder, and surfer. Beyond computer science, my interests
-            include running, psychology, philosophy, and mathematics.
+            include running, psychology, philosophy, and mathematics. I am curre
           </p>
           <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
             My Personality
