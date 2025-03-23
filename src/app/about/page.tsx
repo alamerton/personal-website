@@ -45,7 +45,8 @@ export default function About() {
           <p className="text-gray-700 mb-8">
             In the past I have been an avid fly fisherman, downhill
             skateboarder, and surfer. Beyond computer science, my interests
-            include running, psychology, philosophy, and mathematics. I am curre
+            include running, psychology, philosophy, and mathematics. I am
+            currently studying mathematics and philosophy in my spare time.
           </p>
           <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
             My Personality
