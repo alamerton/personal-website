@@ -34,7 +34,7 @@ export default function Home() {
           <a className="text-indigo-600" href="http://formationresearch.com/">
             Formation Research
           </a>
-          . I plan to be a computer scientist in the future.
+          . I plan to be a computer scientist and entrepreneur in the future.
         </p>
       </section>
       <section className="mb-16">
