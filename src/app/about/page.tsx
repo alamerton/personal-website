@@ -43,10 +43,10 @@ export default function About() {
             Not Professionally
           </h2>
           <p className="text-gray-700 mb-8">
-            In the past I have been an avid fly fisherman, downhill
-            skateboarder, and surfer. Beyond computer science, my interests
-            include running, psychology, philosophy, and mathematics. I am
-            currently studying mathematics and philosophy in my spare time.
+            In the past I have been an avid fly fisherman, skateboarder, and
+            surfer. Beyond computer science, my interests include Vipassana
+            meditation, long-distance running, downhill longboarding,
+            psychology, philosophy, and mathematics.
           </p>
           <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
             My Personality
