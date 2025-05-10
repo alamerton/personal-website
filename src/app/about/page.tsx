@@ -18,8 +18,8 @@ export default function About() {
         </div>
         <div className="flex-1 bg-white p-6 rounded-lg shadow-md bg-opacity-25">
           <p className="text-gray-700 mb-4">
-            I&apos;m an individual living in Falmouth, UK. I grew up here, and
-            have spent some time living in Bristol and London.
+            I&apos;m an individual living in Falmouth, UK. I grew up here.
+            I&apos;ve previously lived in Bristol and London.
           </p>
           <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
             Professionally
@@ -43,16 +43,15 @@ export default function About() {
             Not Professionally
           </h2>
           <p className="text-gray-700 mb-8">
-            In the past I have been an avid fly fisherman, skateboarder, and
-            surfer. Beyond computer science, my interests include Vipassana
-            meditation, long-distance running, downhill longboarding,
-            psychology, philosophy, and mathematics.
+            Beyond computer science, my interests include Vipassana meditation,
+            long-distance running, downhill longboarding, surfing, psychology,
+            philosophy, and mathematics.
           </p>
           <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
             My Personality
           </h2>
           <p className="text-gray-700 mb-4">
-            Here are my scores on the Big Five personality traits, where each
+            These are my scores on the Big Five personality traits, where each
             number represents my percentile ranking compared to the general
             population according to the Big Five Aspects Scale.
           </p>

@@ -34,7 +34,7 @@ export default function Home() {
           <a className="text-indigo-600" href="http://formationresearch.com/">
             Formation Research
           </a>
-          . I plan to be a computer scientist and entrepreneur in the future.
+          . I plan to be an impactful computer scientist in the future.
         </p>
       </section>
       <section className="mb-16">
@@ -46,7 +46,7 @@ export default function Home() {
             href="https://www.linkedin.com/in/alfie-lamerton/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-blue-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaLinkedin className="text-2xl mr-3" />
@@ -64,7 +64,7 @@ export default function Home() {
           </a>
           <a
             href="mailto:alfie.david.lamerton@gmail.com"
-            className="flex items-center justify-center text-gray-800 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaEnvelope className="text-2xl mr-3" />
@@ -84,7 +84,7 @@ export default function Home() {
             href="https://github.com/alamerton"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-gray-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaGithub className="text-2xl mr-3" />
@@ -94,7 +94,7 @@ export default function Home() {
             href="https://www.strava.com/athletes/43741695"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-orange-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaStrava className="text-2xl mr-3" />
@@ -104,7 +104,7 @@ export default function Home() {
             href="https://www.goodreads.com/user/show/180101310-alfie-lamerton"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-brown-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaBook className="text-2xl mr-3" />
@@ -114,7 +114,7 @@ export default function Home() {
             href="https://rateyourmusic.com/~alamerton"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-blue-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaMusic className="text-2xl mr-3" />
