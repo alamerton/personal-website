@@ -31,8 +31,9 @@ export default function About() {
             a fallibilist perspective as an epistemic foundation for this
             position. In short, I believe our knowledge will continue to grow
             with our technology, and this will help us solve problems that seem
-            hard now. That is not to say that problems don't emerge, which is
-            why I am focusing my career on problems I think are important now.
+            hard now. That is not to say that problems don&apos;t emerge, which
+            is why I&apos;m focusing my career on problems I think are important
+            now.
           </p>
           <p className="text-gray-700 mb-4">
             Specifically, I&apos;m enthusiastic about computer science and
