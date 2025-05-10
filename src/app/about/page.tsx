@@ -26,18 +26,30 @@ export default function About() {
           </h2>
           <p className="text-gray-700 mb-4">
             I&apos;m generally excited about the future of technology and
-            innovation and how it can transform the world. Specifically,
-            I&apos;m enthusiastic about computer science and entrepreneurship.
-            To that end, I&apos;m currently focusing my energy on building
-            skills in entrepreneurship and technical AI safety research.
-            I&apos;m also working part-time as a research assistant at
-            King&apos;s College London to further build my research skills.
+            innovation and how it can transform the world. I try to be
+            rationally optimisitic about our technological trajectory, and take
+            a fallibilist perspective as an epistemic foundation for this
+            position. In short, I believe our knowledge will continue to grow
+            with our technology, and this will help us solve problems that seem
+            hard now. That is not to say that problems don't emerge, which is
+            why I am focusing my career on problems I think are important now.
+          </p>
+          <p className="text-gray-700 mb-4">
+            Specifically, I&apos;m enthusiastic about computer science and
+            entrepreneurship. To that end, I&apos;m currently focusing my energy
+            on building skills in entrepreneurship and technical AI safety and
+            governance research. I&apos;m also working part-time as a research
+            assistant at King&apos;s College London to further build my research
+            skills and learn how to create impactful machine learning
+            applications and interventions.
           </p>
           <p className="text-gray-700 mb-4">
             I aim to serve humanity by creating beautiful and useful things.
             Specifically, I plan to be a computer scientist working on impactful
-            problems, starting with global catastrophic risks such AI alignment,
-            and an entrepreneur who makes impactful things based on my research.
+            problems – starting with global catastrophic risks such AI alignment
+            and applications of machine learning in healthcare – and an
+            entrepreneur who makes impactful things based on my research –
+            starting with founding Formation Research.
           </p>
           <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
             Not Professionally
