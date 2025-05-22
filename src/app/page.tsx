@@ -30,7 +30,7 @@ export default function Home() {
           Hi! I&apos;m Alfie
         </h1>
         <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-          I&apos;m an individual living in Falmouth, UK, currently building{" "}
+          I&apos;m an individual living in Cornwall, UK, currently building{" "}
           <a className="text-indigo-600" href="http://formationresearch.com/">
             Formation Research
           </a>
