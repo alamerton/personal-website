@@ -21,6 +21,15 @@ export default function About() {
             I&apos;m an individual living in Cornwall, UK. I grew up here.
             I&apos;ve previously lived in Bristol and London.
           </p>
+          <p className="text-gray-700 mb-4">
+            I appreciate feedback, which{" "}
+            <a
+              className="text-indigo-600"
+              href="https://www.admonymous.co/alfie-lamerton"
+            >
+              you can give me anonymously here.
+            </a>
+          </p>
           <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
             Professionally
           </h2>
@@ -57,8 +66,8 @@ export default function About() {
           </h2>
           <p className="text-gray-700 mb-8">
             Beyond computer science, my interests include Vipassana meditation,
-            long-distance running, downhill longboarding, surfing, psychology,
-            philosophy, and mathematics.
+            long-distance running, surfing, psychology, philosophy, and
+            mathematics.
           </p>
           <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
             My Personality
