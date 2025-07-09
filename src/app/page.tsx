@@ -34,7 +34,7 @@ export default function Home() {
           <a className="text-indigo-600" href="http://formationresearch.com/">
             Formation Research
           </a>
-          . I plan to be an impactful computer scientist in the future.
+          . I aim to be an impactful computer scientist in the future.
         </p>
       </section>
       <section className="mb-16">
@@ -90,7 +90,7 @@ export default function Home() {
             <FaGithub className="text-2xl mr-3" />
             <span>GitHub</span>
           </a>
-          <a
+          {/* <a
             href="https://www.strava.com/athletes/43741695"
             target="_blank"
             rel="noopener noreferrer"
@@ -99,8 +99,8 @@ export default function Home() {
           >
             <FaStrava className="text-2xl mr-3" />
             <span>Strava</span>
-          </a>
-          <a
+          </a> */}
+          {/* <a
             href="https://www.goodreads.com/user/show/180101310-alfie-lamerton"
             target="_blank"
             rel="noopener noreferrer"
@@ -109,8 +109,8 @@ export default function Home() {
           >
             <FaBook className="text-2xl mr-3" />
             <span>Goodreads</span>
-          </a>
-          <a
+          </a> */}
+          {/* <a
             href="https://rateyourmusic.com/~alamerton"
             target="_blank"
             rel="noopener noreferrer"
@@ -119,7 +119,7 @@ export default function Home() {
           >
             <FaMusic className="text-2xl mr-3" />
             <span>Rate Your Music</span>
-          </a>
+          </a> */}
         </div>
       </section>
     </main>
