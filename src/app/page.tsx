@@ -1,12 +1,6 @@
 import alfie from "@/images/alfie.jpeg";
 import Image from "next/image";
-import {
-  FaLinkedin,
-  FaEnvelope,
-  FaFileAlt,
-  FaComments,
-  FaGithub,
-} from "react-icons/fa";
+import { FaLinkedin, FaEnvelope, FaComments, FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -67,7 +61,7 @@ export default function Home() {
             <FaEnvelope className="text-2xl mr-3" />
             <span>Email Me</span>
           </a>
-          <a
+          {/* <a
             href="https://docs.google.com/document/d/19b-xjfgDEBVkTdM0qJMhHguW-ajqaYouYSt2mzo-vac/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
@@ -76,7 +70,7 @@ export default function Home() {
           >
             <FaFileAlt className="text-2xl mr-3" />
             <span>CV</span>
-          </a>
+          </a> */}
           <a
             href="https://github.com/alamerton"
             target="_blank"
