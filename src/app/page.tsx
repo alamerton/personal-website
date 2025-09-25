@@ -20,12 +20,26 @@ export default function Home() {
         <h1 className="text-5xl font-bold mb-4 text-indigo-700 font-merriweather">
           Hi! I&apos;m Alfie
         </h1>
-        <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-4">
           I&apos;m an individual living in the UK, currently building{" "}
           <a className="text-indigo-600" href="http://formationresearch.com/">
             Formation Research
           </a>
           . I aim to be an impactful computer scientist in the future.
+        </p>
+        <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+          As a researcher, I am interested in AI-enabled totalitarianism,
+          authoritarianism, coups, and power concentration, and
+          governance-informed solutions for these problems leveraging technical
+          methods of verification and cooperation.
+          <br />
+          <br />I think AI is a key technology in the potential manifestation of
+          a more extreme version of pre-existing social and political phenomena
+          like totalitarianism, authoritarianism, coups, and power
+          concentration. AI could make these possible situations much worse, so
+          I am interested in governance-informed technical methods for designing
+          and governing AI systems in a way that reduces these amplification
+          risks.
         </p>
       </section>
       <section className="mb-16">
