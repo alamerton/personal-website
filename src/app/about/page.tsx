@@ -18,8 +18,8 @@ export default function About() {
         </div>
         <div className="flex-1 bg-white p-6 rounded-lg shadow-md bg-opacity-25">
           <p className="text-gray-700 mb-4">
-            I&apos;m an individual living in Cornwall, UK. I grew up here.
-            I&apos;ve previously lived in Bristol and London.
+            I&apos;m an individual living in London, UK. I&apos;ve previously
+            lived in Bristol and Cornwall, where I grew up.
           </p>
           <p className="text-gray-700 mb-4">
             I appreciate feedback, which{" "}
