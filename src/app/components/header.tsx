@@ -15,7 +15,7 @@ const Header = () => {
             <li>
               <Link
                 href="/"
-                className="hover:text-indigo-600 transition duration-300"
+                className="text-xl hover:text-indigo-600 transition duration-300"
               >
                 Home
               </Link>
@@ -23,7 +23,7 @@ const Header = () => {
             <li>
               <Link
                 href="/about"
-                className="hover:text-indigo-600 transition duration-300"
+                className="text-xl hover:text-indigo-600 transition duration-300"
               >
                 About
               </Link>
@@ -31,7 +31,7 @@ const Header = () => {
             <li>
               <Link
                 href="https://substack.com/@alfielamerton"
-                className="hover:text-indigo-600 transition duration-300"
+                className="text-xl hover:text-indigo-600 transition duration-300"
               >
                 Substack
               </Link>

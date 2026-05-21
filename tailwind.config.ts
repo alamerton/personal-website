@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        merriweather: ["var(--font-merriweather)"],
+        garamond: ['"Times New Roman"', "Times", "serif"],
       },
       colors: {
         "formation-purple": "#33005D",

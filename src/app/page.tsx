@@ -17,17 +17,20 @@ export default function Home() {
         </div>
       </section>
       <section className="text-center mb-16">
-        <h1 className="text-5xl font-bold mb-4 text-indigo-700 font-merriweather">
+        <h1
+          className="text-6xl mb-4 text-indigo-700 font-garamond"
+          style={{ fontVariantLigatures: "no-common-ligatures" }}
+        >
           Hi! I&apos;m Alfie
         </h1>
-        <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-4">
+        <p className="text-2xl text-gray-700 max-w-2xl mx-auto mb-4 text-justify">
           I&apos;m an individual living in the UK, currently building{" "}
           <a className="text-indigo-600" href="http://formationresearch.com/">
             Formation Research
           </a>
           . I aim to be an impactful computer scientist in the future.
         </p>
-        <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+        <p className="text-2xl text-gray-700 max-w-2xl mx-auto text-justify">
           As a researcher, I am interested in AI-enabled totalitarianism,
           authoritarianism, coups, and power concentration, and
           governance-informed solutions for these problems leveraging technical
@@ -38,8 +41,7 @@ export default function Home() {
           like totalitarianism, authoritarianism, coups, and power
           concentration. AI could make these possible situations much worse, so
           I am interested in governance-informed technical methods for designing
-          and governing AI systems in a way that reduces these amplification
-          risks.
+          and governing AI systems in a way that reduces these risks.
         </p>
       </section>
       <section className="mb-16">
@@ -51,7 +53,7 @@ export default function Home() {
             href="https://www.linkedin.com/in/alfie-lamerton/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-xl text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaLinkedin className="text-2xl mr-3" />
@@ -61,7 +63,7 @@ export default function Home() {
             href="https://www.lesswrong.com/users/alamerton"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-xl text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaComments className="text-2xl mr-3" />
@@ -69,7 +71,7 @@ export default function Home() {
           </a>
           <a
             href="mailto:alfie.david.lamerton@gmail.com"
-            className="flex items-center justify-center text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-xl text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaEnvelope className="text-2xl mr-3" />
@@ -79,7 +81,7 @@ export default function Home() {
             href="https://docs.google.com/document/d/19b-xjfgDEBVkTdM0qJMhHguW-ajqaYouYSt2mzo-vac/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-xl text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaFileAlt className="text-2xl mr-3" />
@@ -89,7 +91,7 @@ export default function Home() {
             href="https://github.com/alamerton"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-xl text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaGithub className="text-2xl mr-3" />
@@ -99,7 +101,7 @@ export default function Home() {
             href="https://www.strava.com/athletes/43741695"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-xl text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaStrava className="text-2xl mr-3" />
@@ -109,7 +111,7 @@ export default function Home() {
             href="https://www.goodreads.com/user/show/180101310-alfie-lamerton"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-xl text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaBook className="text-2xl mr-3" />
@@ -119,7 +121,7 @@ export default function Home() {
             href="https://rateyourmusic.com/~alamerton"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="flex items-center justify-center text-xl text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
             <FaMusic className="text-2xl mr-3" />
