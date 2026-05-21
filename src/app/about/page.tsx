@@ -39,6 +39,15 @@ export default function About() {
             governance research.
           </p>
           <p className="text-2xl text-gray-700 mb-4 text-justify">
+            I think AI is a key technology in the potential manifestation of a
+            more extreme version of pre-existing social and political phenomena
+            like totalitarianism, authoritarianism, coups, and power
+            concentration. AI could make these possible situations much worse,
+            so I am interested in governance-informed technical methods for
+            designing and governing AI systems in a way that reduces these
+            risks.
+          </p>
+          <p className="text-2xl text-gray-700 mb-4 text-justify">
             I aim to serve humanity by creating beautiful and useful things.
             Specifically, I plan to be a computer scientist working on impactful
             problems – starting with global catastrophic risks such as AI

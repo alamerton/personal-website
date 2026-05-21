@@ -2,6 +2,38 @@ import alfie from "@/images/alfie.jpeg";
 import Image from "next/image";
 import { FaLinkedin, FaEnvelope, FaComments, FaGithub } from "react-icons/fa";
 
+const research = [
+  {
+    citation:
+      "Lamerton, A., & Roger, F. (2026). Narrow secret loyalty dodges black-box audits. Preprint.",
+    href: "https://arxiv.org/abs/2605.06846",
+  },
+  {
+    citation:
+      "Kwon, J., Lamerton, A., Draganov, A., Banerjee, D., Schoen, B., Pistillo, M., Kokotajlo, D., Evans, O., Roger, F., & Davidson, T. (2026). AIs with secret loyalties are a serious but addressable threat.",
+    href: "https://www.formationresearch.com/secret-loyalties-whitepaper.pdf",
+  },
+  {
+    citation:
+      "Lamerton, A. (2026). A survey of AI-driven power concentration. Formation Research.",
+    href: "https://www.formationresearch.com/power-concentration-survey.pdf",
+  },
+  {
+    citation: "Lamerton, A. (2025). Lock-in [Sequence].",
+    href: "https://www.lesswrong.com/s/yP8Zs4Tuog6tDES5b",
+  },
+  {
+    citation:
+      "Lamerton, A. (2024). In-context learning: an alignment survey.",
+    href: "https://www.lesswrong.com/posts/KCbRx4DhR7puBvGkX/in-context-learning-an-alignment-survey",
+  },
+  {
+    citation:
+      "Lamerton, A. (2024). A review of in-context learning hypotheses for automated AI alignment research.",
+    href: "https://www.lesswrong.com/posts/GPcwP8pgyPFPwvi2h/a-review-of-in-context-learning-hypotheses-for-automated-ai",
+  },
+];
+
 export default function Home() {
   return (
     <main className="container mx-auto px-4 py-12">
@@ -35,13 +67,6 @@ export default function Home() {
           authoritarianism, coups, and power concentration, and
           governance-informed solutions for these problems leveraging technical
           methods of verification and cooperation.
-          <br />
-          <br />I think AI is a key technology in the potential manifestation of
-          a more extreme version of pre-existing social and political phenomena
-          like totalitarianism, authoritarianism, coups, and power
-          concentration. AI could make these possible situations much worse, so
-          I am interested in governance-informed technical methods for designing
-          and governing AI systems in a way that reduces these risks.
         </p>
       </section>
       <section className="mb-16">
@@ -128,6 +153,39 @@ export default function Home() {
             <span>Rate Your Music</span>
           </a> */}
         </div>
+      </section>
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-center text-indigo-600">
+          Research
+        </h2>
+        <ul className="max-w-2xl mx-auto space-y-4">
+          {research.map(({ citation, href }) => {
+            const parts = citation.split("Lamerton, A.");
+            const label = href.includes("arxiv.org")
+              ? "arXiv"
+              : href.includes("lesswrong.com")
+                ? "LessWrong"
+                : "Preprint";
+            return (
+              <li key={href} className="text-xl text-gray-700 text-justify">
+                {parts.map((part, i) => (
+                  <span key={i}>
+                    {i > 0 && <strong>Lamerton, A.</strong>}
+                    {part}
+                  </span>
+                ))}{" "}
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600"
+                >
+                  {label}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
       </section>
     </main>
   );
