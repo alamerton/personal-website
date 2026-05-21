@@ -1,4 +1,3 @@
-import alfie from "@/images/alfie.jpeg";
 import Image from "next/image";
 import { FaLinkedin, FaEnvelope, FaComments, FaGithub } from "react-icons/fa";
 
@@ -40,7 +39,7 @@ export default function Home() {
       <section className="flex justify-center mb-8">
         <div className="w-40 h-40 relative rounded-full overflow-hidden shadow-lg">
           <Image
-            src={alfie}
+            src="/alfie.jpeg"
             alt="Alfie Lamerton"
             fill
             style={{ objectFit: "cover" }}
