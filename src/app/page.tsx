@@ -1,5 +1,12 @@
 import Image from "next/image";
-import { FaLinkedin, FaEnvelope, FaComments, FaGithub } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaEnvelope,
+  FaComments,
+  FaGithub,
+  FaGraduationCap,
+} from "react-icons/fa";
+import { SiSubstack } from "react-icons/si";
 
 const research = [
   {
@@ -74,24 +81,24 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
           <a
-            href="https://www.linkedin.com/in/alfie-lamerton/"
+            href="https://scholar.google.com/citations?user=zJlvbNcAAAAJ&hl=en&oi=ao"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center text-xl text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
-            <FaLinkedin className="text-2xl mr-3" />
-            <span>LinkedIn</span>
+            <FaGraduationCap className="text-2xl mr-3" />
+            <span>Google Scholar</span>
           </a>
           <a
-            href="https://www.lesswrong.com/users/alamerton"
+            href="https://www.linkedin.com/in/alfie-lamerton/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center text-xl text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
           >
-            <FaComments className="text-2xl mr-3" />
-            <span>LessWrong</span>
+            <FaLinkedinIn className="text-2xl mr-3" />
+            <span>LinkedIn</span>
           </a>
           <a
             href="mailto:alfie.david.lamerton@gmail.com"
@@ -101,16 +108,6 @@ export default function Home() {
             <FaEnvelope className="text-2xl mr-3" />
             <span>Email Me</span>
           </a>
-          {/* <a
-            href="https://docs.google.com/document/d/19b-xjfgDEBVkTdM0qJMhHguW-ajqaYouYSt2mzo-vac/edit?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center text-xl text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
-            style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
-          >
-            <FaFileAlt className="text-2xl mr-3" />
-            <span>CV</span>
-          </a> */}
           <a
             href="https://github.com/alamerton"
             target="_blank"
@@ -120,6 +117,26 @@ export default function Home() {
           >
             <FaGithub className="text-2xl mr-3" />
             <span>GitHub</span>
+          </a>
+          <a
+            href="https://www.lesswrong.com/users/alamerton"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center text-xl text-indigo-600 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
+          >
+            <FaComments className="text-2xl mr-3" />
+            <span>LessWrong</span>
+          </a>
+          <a
+            href="https://substack.com/@alfielamerton"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center text-xl text-green-700 px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
+          >
+            <SiSubstack className="text-2xl mr-3" />
+            <span>Substack</span>
           </a>
           {/* <a
             href="https://www.strava.com/athletes/43741695"
