@@ -1,0 +1,844 @@
+/*
+ * Site themes.
+ *
+ * Components use the semantic classes below (site-header, hero, link-item, ...).
+ * The base rules are the "classic" look; each [data-theme] block restyles the
+ * same markup. The active theme is set on <html data-theme="...">.
+ */
+
+/* ---------------------------------------------------------------- tokens */
+
+:root {
+  --font-body: "Times New Roman", Times, serif;
+  --colour-page: #f9fafb;
+  --colour-text: #374151;
+  --colour-muted: #6b7280;
+  --colour-heading: #4338ca; /* indigo-700 */
+  --colour-accent: #4f46e5; /* indigo-600 */
+  --colour-accent-alt: #15803d; /* green-700 */
+  --colour-rule: rgba(55, 65, 81, 0.18);
+  --brand-gradient: linear-gradient(to right, #4f46e5, #16a34a);
+  --column-width: 42rem;
+  --body-size: 1.25rem;
+  --body-size-wide: 1.5rem;
+  --body-leading: 1.4;
+}
+
+/* --------------------------------------------------------- classic (base) */
+
+body {
+  background-color: var(--colour-page);
+  color: var(--colour-text);
+  font-family: var(--font-body);
+}
+
+.site-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+}
+
+.site-header {
+  background-image: var(--brand-gradient);
+  color: #ffffff;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.site-header a:focus-visible {
+  outline-color: #ffffff;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.site-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+
+.site-name:hover {
+  color: #e9d5ff;
+}
+
+.site-nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-nav-link {
+  font-size: 1.125rem;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+.site-nav-link:hover,
+.site-nav-link[aria-current="page"] {
+  text-decoration-line: underline;
+}
+
+.page {
+  max-width: calc(var(--column-width) + 2rem);
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.page-title {
+  margin-bottom: 1rem;
+  color: var(--colour-heading);
+  font-size: 3rem;
+  line-height: 1;
+  text-align: center;
+  font-variant-ligatures: no-common-ligatures;
+}
+
+.page--about .page-title {
+  margin-bottom: 2rem;
+}
+
+.hero {
+  margin-bottom: 4rem;
+}
+
+.hero-photo {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+  border-radius: 9999px;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.body-text {
+  margin-bottom: 1rem;
+  font-size: var(--body-size);
+  line-height: var(--body-leading);
+  text-align: left;
+}
+
+.body-text a,
+.research-item a {
+  color: var(--colour-accent);
+}
+
+.body-text a:hover,
+.research-item a:hover {
+  text-decoration: underline;
+}
+
+.page-section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  color: var(--colour-accent);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.subsection-title {
+  margin: 2rem 0 1rem;
+  color: var(--colour-accent);
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+/* Photo gallery (skating page) */
+.page--gallery {
+  max-width: 50rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0 0 2rem;
+}
+
+.gallery-photo {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 0.25rem;
+}
+
+.gallery-photo img {
+  transition: transform 0.4s ease;
+}
+
+.gallery-photo:hover img {
+  transform: scale(1.03);
+}
+
+.page--gallery .body-text.gallery-note {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* In-page nav targets */
+.page-section[id] {
+  scroll-margin-top: 2rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.page--home .section-title {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.link-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  color: var(--colour-accent);
+  font-size: 1.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.link-item--alt {
+  color: var(--colour-accent-alt);
+}
+
+.link-item:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.25rem);
+}
+
+.link-icon {
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.research-list > * + * {
+  margin-top: 1rem;
+}
+
+.research-item {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.trait-list {
+  padding-left: 1.25rem;
+  list-style: disc;
+  font-size: var(--body-size);
+  line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+  .site-name {
+    font-size: 1.5rem;
+  }
+
+  .site-nav-links {
+    gap: 1.5rem;
+  }
+
+  .site-nav-link {
+    font-size: 1.25rem;
+  }
+
+  .link-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .body-text,
+  .research-item {
+    text-align: justify;
+    hyphens: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 3.75rem;
+  }
+
+  .body-text,
+  .trait-list {
+    font-size: var(--body-size-wide);
+  }
+
+  .research-item {
+    font-size: 1.25rem;
+  }
+}
+
+/* ------------------------------------------- shared by the relaxed themes */
+
+[data-theme="mist"],
+[data-theme="paper"],
+[data-theme="folio"],
+[data-theme="octarine"] {
+  /* Octarine: the classic indigo-to-green, widened into violet and shimmering. */
+  --brand-gradient: linear-gradient(
+    100deg,
+    #7c3aed,
+    #4f46e5 30%,
+    #0d9488 65%,
+    #16a34a
+  );
+  --font-body: var(--font-eb-garamond), Georgia, "Times New Roman", serif;
+  --body-size: 1.2rem;
+  --body-size-wide: 1.3rem;
+  --body-leading: 1.65;
+  --column-width: 38rem;
+}
+
+:is(
+  [data-theme="mist"],
+  [data-theme="paper"],
+  [data-theme="folio"],
+  [data-theme="octarine"]
+) {
+  .site-header {
+    background-image: none;
+    box-shadow: none;
+    color: var(--colour-text);
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    max-width: calc(var(--column-width) + 2rem);
+    padding-top: 2.5rem;
+    padding-bottom: 0;
+  }
+
+  .site-name {
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  /* The purple-to-green gradient moves from the header bar into the type. */
+  .site-name,
+  .page-title {
+    width: fit-content;
+    background-image: var(--brand-gradient);
+    background-size: 220% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: octarine-shimmer 12s ease-in-out infinite alternate;
+  }
+
+  .site-header a:focus-visible {
+    outline-color: var(--colour-accent);
+  }
+
+  .page-title {
+    margin-inline: auto;
+    padding-bottom: 0.1em; /* keeps descenders inside the clipped gradient */
+  }
+
+  .site-name:hover {
+    opacity: 0.8;
+  }
+
+  .site-nav-link {
+    color: var(--colour-muted);
+    font-size: 1.05rem;
+    font-variant-caps: small-caps;
+    letter-spacing: 0.06em;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+  }
+
+  .site-nav-link:hover,
+  .site-nav-link[aria-current="page"] {
+    color: var(--colour-accent);
+  }
+
+  .body-text,
+  .research-item {
+    text-align: left;
+    hyphens: manual;
+  }
+
+  .body-text a,
+  .research-item a {
+    text-decoration: underline;
+    text-decoration-color: color-mix(
+      in srgb,
+      var(--colour-accent) 35%,
+      transparent
+    );
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    transition: color 0.2s;
+  }
+
+  .body-text a:hover,
+  .research-item a:hover {
+    color: var(--colour-accent-alt);
+    text-decoration-color: currentColor;
+  }
+
+  .hero-photo,
+  .link-item,
+  .link-item:hover {
+    box-shadow: none;
+  }
+
+  .link-item:hover {
+    transform: none;
+  }
+
+  .research-item {
+    font-size: 1.1rem;
+    line-height: 1.55;
+  }
+
+  .section-title {
+    color: var(--colour-accent);
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-variant-caps: small-caps;
+    letter-spacing: 0.1em;
+  }
+}
+
+/* ------------------------------------------------------------------ mist */
+/* The closest relative of classic: same forest and gradient, turned down.  */
+
+[data-theme="mist"] .site-backdrop::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(249, 250, 251, 0.9),
+    rgba(249, 250, 251, 0.55)
+  );
+}
+
+:is([data-theme="mist"], [data-theme="octarine"]) {
+  /* The header gradient survives as a hairline under the nav. */
+  .site-nav {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid;
+    border-image: var(--brand-gradient) 1;
+  }
+
+  .page-title {
+    font-size: 2.75rem;
+    font-weight: 500;
+  }
+
+  .hero-photo {
+    width: 9rem;
+    height: 9rem;
+    outline: 1px solid rgba(255, 255, 255, 0.7);
+    outline-offset: 4px;
+  }
+
+  .link-list {
+    gap: 0 2.5rem;
+  }
+
+  .link-item {
+    justify-content: flex-start;
+    padding: 0.8rem 0.25rem;
+    border-bottom: 1px solid var(--colour-rule);
+    border-radius: 0;
+    background: none;
+    font-size: 1.2rem;
+  }
+
+  .link-item:hover {
+    border-bottom-color: currentColor;
+    background: none;
+  }
+
+  .link-icon {
+    font-size: 1.1rem;
+    opacity: 0.8;
+  }
+}
+
+/* ----------------------------------------------------------------- paper */
+/* Plain page, left-aligned column, portrait beside the introduction.       */
+
+[data-theme="paper"] {
+  --colour-page: #fdfcf8;
+  --colour-text: #1f2430;
+  --colour-rule: rgba(31, 36, 48, 0.14);
+
+  .site-backdrop {
+    display: none;
+  }
+
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 2px solid;
+    border-image: var(--brand-gradient) 1;
+  }
+
+  .page {
+    padding-top: 2rem;
+  }
+
+  .page-title {
+    font-size: 1.9rem;
+    margin-inline: 0;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .hero {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-photo {
+    width: 7rem;
+    height: 7rem;
+    margin: 0;
+  }
+
+  .page-section {
+    margin-bottom: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--colour-rule);
+  }
+
+  .page--home .section-title {
+    margin-bottom: 0.75rem;
+    text-align: left;
+  }
+
+  .link-list {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+    justify-items: start;
+  }
+
+  .link-item {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+  }
+
+  .link-item:hover {
+    background: none;
+    text-decoration-color: currentColor;
+  }
+
+  .link-icon {
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    .hero {
+      grid-template-columns: 1fr auto;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .hero-photo {
+      order: 2;
+      width: 9.5rem;
+      height: 9.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+/* ----------------------------------------------------------------- folio */
+/* A framed, centred title page.                                            */
+
+[data-theme="folio"] {
+  --colour-page: #f7f7f5;
+  --colour-text: rgba(17, 24, 39, 0.8);
+  --column-width: 34rem;
+
+  .site-backdrop {
+    display: none;
+  }
+
+  .site-frame {
+    min-height: calc(100vh - 1.5rem);
+    position: relative;
+    margin: 0.75rem;
+    border: 1px solid;
+    border-image: var(--brand-gradient) 1;
+  }
+
+  /* Second, inner line of the double frame. */
+  .site-frame::before {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border: 1px solid;
+    border-image: var(--brand-gradient) 1;
+    pointer-events: none;
+  }
+
+  .site-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 2rem;
+  }
+
+  .site-name {
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .site-nav-link {
+    font-style: italic;
+    font-variant-caps: normal;
+    letter-spacing: 0;
+  }
+
+  .page-title {
+    font-size: 2.25rem;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .hero-photo {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .hero .body-text {
+    text-align: center;
+    text-wrap: pretty;
+  }
+
+  .section-title,
+  .page--home .section-title {
+    font-variant-caps: normal;
+    letter-spacing: 0.14em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 2.75rem;
+    margin: 0.6rem auto 0;
+    border-top: 2px solid;
+    border-image: var(--brand-gradient) 1;
+  }
+
+  .subsection-title {
+    margin-top: 2.25rem;
+    color: var(--colour-accent-alt);
+    font-size: 1.35rem;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .trait-list {
+    width: fit-content;
+    margin: 0 auto 1rem;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  /* Source credit under the trait scores */
+  .trait-list + .body-text {
+    color: var(--colour-muted);
+    font-size: 1.05rem;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .link-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem 0;
+  }
+
+  .link-item {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    font-size: 1.05rem;
+  }
+
+  /* One row, so alternate strictly by position rather than by grid cell. */
+  .link-item:nth-child(odd) {
+    color: var(--colour-accent);
+  }
+
+  .link-item:nth-child(even) {
+    color: var(--colour-accent-alt);
+  }
+
+  .link-item:hover {
+    background: none;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .link-item:not(:last-child)::after {
+    content: "|";
+    margin: 0 0.6rem;
+    color: var(--colour-rule);
+  }
+
+  .link-icon {
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    .site-frame {
+      min-height: calc(100vh - 3rem);
+      margin: 1.5rem;
+    }
+  }
+}
+
+/* -------------------------------------------------------------- octarine */
+/* Mist after dark: the forest at night, lit by the colour of magic.        */
+
+[data-theme="octarine"] {
+  --brand-gradient: linear-gradient(
+    100deg,
+    #a78bfa,
+    #818cf8 30%,
+    #34d399 65%,
+    #bef264
+  );
+  --colour-page: #0c0a14;
+  --colour-text: #dcd8ea;
+  --colour-muted: #9d97b8;
+  --colour-accent: #b9a5ff;
+  --colour-accent-alt: #86e3a8;
+  --colour-rule: rgba(255, 255, 255, 0.14);
+
+  .site-backdrop img {
+    filter: brightness(0.55) saturate(0.5);
+  }
+
+  .site-backdrop::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(
+        ellipse at 15% 0%,
+        rgba(124, 58, 237, 0.4),
+        transparent 55%
+      ),
+      radial-gradient(
+        ellipse at 90% 100%,
+        rgba(22, 163, 74, 0.3),
+        transparent 55%
+      ),
+      rgba(12, 10, 20, 0.5);
+  }
+
+  .hero-photo {
+    outline-color: rgba(185, 165, 255, 0.5);
+    box-shadow:
+      0 0 40px rgba(139, 92, 246, 0.4),
+      0 0 90px rgba(52, 211, 153, 0.22);
+  }
+}
+
+@keyframes octarine-shimmer {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-name,
+  .page-title {
+    animation: none !important;
+  }
+}
+
+/* -------------------------------------------- theme switcher (dev only) */
+
+.theme-switcher {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  z-index: 50;
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 9999px;
+  background: rgba(17, 24, 39, 0.85);
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  transform: translateX(-50%);
+}
+
+.theme-switcher button {
+  padding: 0.3rem 0.8rem;
+  border-radius: 9999px;
+  color: #d1d5db;
+}
+
+.theme-switcher button[aria-pressed="true"] {
+  background: #ffffff;
+  color: #111827;
+}

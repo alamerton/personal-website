@@ -1,44 +1,42 @@
 import Link from "next/link";
 
+const navLinks = [
+  { label: "Research", href: "/#research" },
+  { label: "About", href: "/#about" },
+  { label: "Substack", href: "https://substack.com/@alfielamerton" },
+];
+
 const Header = () => {
   return (
-    <header className="bg-gradient-to-r from-indigo-600 to-green-600 text-white shadow-lg bg-opacity-1">
-      <div className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
-          <Link
-            href="/"
-            className="text-2xl font-bold tracking-tight hover:text-purple-200 transition duration-300"
-          >
-            Alfie Lamerton
-          </Link>
-          <ul className="flex space-x-6">
-            <li>
-              <Link
-                href="/"
-                className="text-xl hover:text-indigo-600 transition duration-300"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/about"
-                className="text-xl hover:text-indigo-600 transition duration-300"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://substack.com/@alfielamerton"
-                className="text-xl hover:text-indigo-600 transition duration-300"
-              >
-                Substack
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header className="site-header">
+      <nav aria-label="Main" className="site-nav">
+        <Link href="/" className="site-name">
+          Alfie Lamerton
+        </Link>
+        <ul className="site-nav-links">
+          {navLinks.map(({ label, href }) => {
+            const isExternal = href.startsWith("http");
+            return (
+              <li key={href}>
+                {isExternal ? (
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="site-nav-link"
+                  >
+                    {label}
+                  </a>
+                ) : (
+                  <Link href={href} className="site-nav-link">
+                    {label}
+                  </Link>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
     </header>
   );
 };
