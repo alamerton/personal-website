@@ -10,39 +10,108 @@ import {
 } from "react-icons/fa";
 import { SiSubstack } from "react-icons/si";
 
-const research = [
+// Mirrors the Research Outputs section of the CV. Work still under review is
+// left out until it is published.
+const researchGroups = [
   {
-    citation:
-      "Lamerton, A., Sarkar, B., Maura-Rivero, R.-R., & Foerster, J. (2026). EGGROLL-IPO: Pluralistic alignment via decentralised post-training with population preferences. Pluralistic Alignment Workshop, ICML 2026.",
-    href: "https://openreview.net/forum?id=5P7ihyDNi8",
+    heading: "Conference Papers",
+    items: [
+      {
+        citation:
+          "Kwon, J., Lamerton, A., Draganov, A., Banerjee, D., Schoen, B., Pistillo, M., Kokotajlo, D., Evans, O., Roger, F., & Davidson, T. (2026). AIs with secret loyalties are a serious but addressable threat. ICML TAIGR workshop, NeurIPS 2026 Position Paper (spotlight).",
+        links: [
+          {
+            label: "OpenReview",
+            href: "https://openreview.net/forum?id=UixLs1nFsP",
+          },
+        ],
+      },
+    ],
   },
   {
-    citation:
-      "Lamerton, A., & Roger, F. (2026). Narrow secret loyalty dodges black-box audits. Preprint.",
-    href: "https://arxiv.org/abs/2605.06846",
+    heading: "Workshop Papers",
+    items: [
+      {
+        citation:
+          "Lamerton, A., Duddu, V., & Rudner, T. G. J. (2026). Towards installing general secret loyalties in frontier AI systems. NeurIPS 2026 Workshop on Trustworthy AI for Good (AI4GOOD).",
+        links: [],
+      },
+      {
+        citation:
+          "Lamerton, A., Sarkar, B., Maura-Rivero, R.-R., & Foerster, J. N. (2026). EGGROLL-IPO: Pluralistic alignment via decentralised post-training with population preferences. ICML 2026 Workshop on Pluralistic Alignment.",
+        links: [
+          {
+            label: "OpenReview",
+            href: "https://openreview.net/forum?id=5P7ihyDNi8",
+          },
+        ],
+      },
+      {
+        citation:
+          "Lamerton, A., & Roger, F. (2026). Narrow secret loyalty dodges black-box audits. ICML Trustworthy AI for Good Workshop.",
+        links: [
+          { label: "arXiv", href: "https://arxiv.org/abs/2605.06846" },
+          {
+            label: "OpenReview",
+            href: "https://openreview.net/forum?id=hUZUqWrytg",
+          },
+        ],
+      },
+    ],
   },
   {
-    citation:
-      "Kwon, J., Lamerton, A., Draganov, A., Banerjee, D., Schoen, B., Pistillo, M., Kokotajlo, D., Evans, O., Roger, F., & Davidson, T. (2026). AIs with secret loyalties are a serious but addressable threat. NeurIPS 2026 (Spotlight).",
-    href: "https://www.formationresearch.com/secret-loyalties-whitepaper.pdf",
-  },
-  {
-    citation:
-      "Lamerton, A. (2026). A survey of AI-driven power concentration. Formation Research.",
-    href: "https://www.formationresearch.com/power-concentration-survey.pdf",
-  },
-  {
-    citation: "Lamerton, A. (2025). Lock-in [Sequence].",
-    href: "https://www.lesswrong.com/s/yP8Zs4Tuog6tDES5b",
-  },
-  {
-    citation: "Lamerton, A. (2024). In-context learning: an alignment survey.",
-    href: "https://www.lesswrong.com/posts/KCbRx4DhR7puBvGkX/in-context-learning-an-alignment-survey",
-  },
-  {
-    citation:
-      "Lamerton, A. (2024). A review of in-context learning hypotheses for automated AI alignment research.",
-    href: "https://www.lesswrong.com/posts/GPcwP8pgyPFPwvi2h/a-review-of-in-context-learning-hypotheses-for-automated-ai",
+    heading: "Preprints / Blog Posts",
+    items: [
+      {
+        citation:
+          "Kumar, S., Lamerton, A., Vergani, S., Leung, C. H. C., & Sridharan, S. (2026). Benchmarking LLM agent propensities for lock-in risk.",
+        links: [
+          {
+            label: "OpenReview",
+            href: "https://openreview.net/forum?id=jvN04Onk5J",
+          },
+        ],
+      },
+      {
+        citation:
+          "Lamerton, A. (2026). A survey of AI-driven power concentration. Formation Research.",
+        links: [
+          {
+            label: "PDF",
+            href: "https://www.formationresearch.com/power-concentration-survey.pdf",
+          },
+        ],
+      },
+      {
+        citation: "Lamerton, A. (2025). Lock-in [Sequence]. LessWrong.",
+        links: [
+          {
+            label: "LessWrong",
+            href: "https://www.lesswrong.com/s/yP8Zs4Tuog6tDES5b",
+          },
+        ],
+      },
+      {
+        citation:
+          "Lamerton, A. (2024). In-context learning: an alignment survey. LessWrong.",
+        links: [
+          {
+            label: "LessWrong",
+            href: "https://www.lesswrong.com/posts/KCbRx4DhR7puBvGkX/in-context-learning-an-alignment-survey",
+          },
+        ],
+      },
+      {
+        citation:
+          "Lamerton, A. (2024). A review of in-context learning hypotheses for automated AI alignment research. LessWrong.",
+        links: [
+          {
+            label: "LessWrong",
+            href: "https://www.lesswrong.com/posts/GPcwP8pgyPFPwvi2h/a-review-of-in-context-learning-hypotheses-for-automated-ai",
+          },
+        ],
+      },
+    ],
   },
 ];
 
@@ -146,31 +215,38 @@ export default function Home() {
       </section>
       <section id="research" className="page-section">
         <h2 className="section-title">Research</h2>
-        <ul className="research-list">
-          {research.map(({ citation, href }) => {
-            const parts = citation.split("Lamerton, A.");
-            const label = href.includes("arxiv.org")
-              ? "arXiv"
-              : href.includes("openreview.net")
-                ? "OpenReview"
-                : href.includes("lesswrong.com")
-                  ? "LessWrong"
-                  : "Preprint";
-            return (
-              <li key={href} className="research-item">
-                {parts.map((part, i) => (
-                  <span key={i}>
-                    {i > 0 && <strong>Lamerton, A.</strong>}
-                    {part}
-                  </span>
-                ))}{" "}
-                <a href={href} target="_blank" rel="noopener noreferrer">
-                  {label}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        {researchGroups.map(({ heading, items }) => (
+          <div key={heading}>
+            <h3 className="subsection-title">{heading}</h3>
+            <ul className="research-list">
+              {items.map(({ citation, links }) => {
+                const parts = citation.split("Lamerton, A.");
+                return (
+                  <li key={citation} className="research-item">
+                    {parts.map((part, i) => (
+                      <span key={i}>
+                        {i > 0 && <strong>Lamerton, A.</strong>}
+                        {part}
+                      </span>
+                    ))}
+                    {links.map(({ label, href }, i) => (
+                      <span key={href}>
+                        {i > 0 ? " · " : " "}
+                        <a
+                          href={href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {label}
+                        </a>
+                      </span>
+                    ))}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ))}
       </section>
       <section id="about" className="page-section">
         <h2 className="section-title">About</h2>
