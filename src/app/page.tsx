@@ -13,12 +13,17 @@ import { SiSubstack } from "react-icons/si";
 const research = [
   {
     citation:
+      "Lamerton, A., Sarkar, B., Maura-Rivero, R.-R., & Foerster, J. (2026). EGGROLL-IPO: Pluralistic alignment via decentralised post-training with population preferences. Pluralistic Alignment Workshop, ICML 2026.",
+    href: "https://openreview.net/forum?id=5P7ihyDNi8",
+  },
+  {
+    citation:
       "Lamerton, A., & Roger, F. (2026). Narrow secret loyalty dodges black-box audits. Preprint.",
     href: "https://arxiv.org/abs/2605.06846",
   },
   {
     citation:
-      "Kwon, J., Lamerton, A., Draganov, A., Banerjee, D., Schoen, B., Pistillo, M., Kokotajlo, D., Evans, O., Roger, F., & Davidson, T. (2026). AIs with secret loyalties are a serious but addressable threat.",
+      "Kwon, J., Lamerton, A., Draganov, A., Banerjee, D., Schoen, B., Pistillo, M., Kokotajlo, D., Evans, O., Roger, F., & Davidson, T. (2026). AIs with secret loyalties are a serious but addressable threat. NeurIPS 2026 (Spotlight).",
     href: "https://www.formationresearch.com/secret-loyalties-whitepaper.pdf",
   },
   {
@@ -146,9 +151,11 @@ export default function Home() {
             const parts = citation.split("Lamerton, A.");
             const label = href.includes("arxiv.org")
               ? "arXiv"
-              : href.includes("lesswrong.com")
-                ? "LessWrong"
-                : "Preprint";
+              : href.includes("openreview.net")
+                ? "OpenReview"
+                : href.includes("lesswrong.com")
+                  ? "LessWrong"
+                  : "Preprint";
             return (
               <li key={href} className="research-item">
                 {parts.map((part, i) => (
