@@ -159,6 +159,13 @@ body {
   font-weight: 600;
 }
 
+.last-updated {
+  margin: -0.5rem 0 1.5rem;
+  color: var(--colour-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 /* Photo gallery (skating page) */
 .page--gallery {
   max-width: 50rem;

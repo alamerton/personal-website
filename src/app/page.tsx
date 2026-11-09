@@ -250,6 +250,7 @@ export default function Home() {
       </section>
       <section id="about" className="page-section">
         <h2 className="section-title">About</h2>
+        <p className="last-updated">Last updated ~2025</p>
         <p className="body-text">
           I&apos;m an individual living in London, UK. I&apos;ve previously
           lived in Bristol and Cornwall, where I grew up.
